@@ -1,2 +1,238 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="LearnMate online learning platform"><title>Module 9 | LearnMate</title><link rel="stylesheet" href="css/style.css"></head><body><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">L</span><span>LearnMate<small>Learn at your pace</small></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="main-nav"><a href="index.html">Home</a><a href="modules.html">Modules</a><a href="dashboard.html">Dashboard</a><a href="portfolio.html">Portfolio</a><a href="feedback.html">Feedback</a><a href="about.html">About Us</a><a href="login.html" id="account-link">Log in</a></nav></header><main><section class="module-top page-hero"><a class="back-link" href="modules.html">← All modules</a><div class="module-topline"><span class="module-number" id="module-number">MODULE 09</span><span class="status-pill" id="module-status">In progress</span></div><h1 id="module-title">Loading module…</h1><p id="module-description"></p><div class="module-progress-wrap"><div class="progress-track"><span id="module-progress-bar"></span></div><span id="module-progress-label">0% complete</span></div></section><div class="module-photo-banner"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=85" alt="Learning inspiration for module 9" loading="lazy"></div><section class="section module-workspace"><aside class="lesson-sidebar panel"><span class="eyebrow">IN THIS MODULE</span><nav id="lesson-nav"></nav><button class="sidebar-quiz" id="jump-activity">Practical activity ↓</button><button class="sidebar-quiz" id="jump-quiz">Knowledge check ↓</button></aside><div class="lesson-main"><section class="panel lesson-content" id="lesson-content"></section><section class="panel activity-panel" id="activity-panel"><span class="eyebrow">PUT IT INTO PRACTICE</span><h2 id="activity-title">Practical activity</h2><p id="activity-intro"></p><ul id="activity-instructions" class="activity-instructions"></ul><form id="activity-form"><label for="activity-response">Your response / progress notes</label><textarea id="activity-response" rows="8" placeholder="Write your response here. You can save a draft and return later."></textarea><div class="form-actions"><button class="btn btn-secondary" type="button" id="save-activity">Save draft</button><button class="btn btn-primary" type="submit" id="complete-activity">Save and mark activity complete</button></div><p id="activity-feedback" class="form-note" aria-live="polite"></p></form></section><section class="panel quiz-panel" id="quiz-panel"><div class="quiz-heading"><div><span class="eyebrow">CHECK YOUR UNDERSTANDING</span><h2>Module quiz</h2><p>10 questions · 1 point each · answers and explanations appear after submission.</p></div><span class="quiz-icon">?</span></div><form id="quiz-form"><div id="quiz-questions"></div><div class="quiz-submit-row"><p id="quiz-message" class="form-note" aria-live="polite">Choose an answer for each question to submit.</p><button class="btn btn-primary" type="submit">Submit quiz</button></div></form><div id="quiz-result" class="quiz-result" hidden></div></section><div class="module-bottom-nav"><a id="previous-module" class="btn btn-secondary" href="modules.html">← Previous</a><button id="mark-module-complete" class="btn btn-secondary" type="button">Mark module complete</button><a id="next-module" class="btn btn-primary" href="module-2.html">Next module →</a></div></div></section></main><footer class="site-footer"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">L</span><span>LearnMate<small>Learn at your pace</small></span></a><p>A self-paced space to learn, practice, and reflect.</p></div><p>Learning progress is saved in this browser using local storage.</p></footer><section class="photo-strip" aria-label="Learning photo gallery"><h2>Learn, connect, and grow <span aria-hidden="true">🌸</span></h2><div class="photo-grid"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Students learning together"><figcaption>Learn together</figcaption></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Laptop and digital workspace"><figcaption>Practice digital skills</figcaption></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Students collaborating on coursework"><figcaption>Grow your confidence</figcaption></figure></div></section><script>(function(){try{const u=JSON.parse(localStorage.getItem('learnmate_demo_session')||'null');if(!u){location.replace('login.html?next='+encodeURIComponent(location.pathname.split('/').pop()));return}const a=document.getElementById('account-link');if(a){a.textContent='Log out';a.href='#';a.addEventListener('click',function(e){e.preventDefault();localStorage.removeItem('learnmate_demo_session');location.href='login.html'})}}catch(e){location.replace('login.html')}})();</script><script src="js/curriculum.js"></script><script src="js/response-config.js"></script><script src="js/responses.js"></script><script src="js/app.js"></script><script src="js/enhancements.js"></script>
-<script src="js/upgrade-pack.js"></script></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LearnMate online learning platform">
+  <title>Module 9 | LearnMate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">L</span>
+      <span>LearnMate<small>Learn at your pace</small></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation"
+      aria-expanded="false">☰</button>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="modules.html">Modules</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="about.html">About Us</a>
+      <a href="login.html" id="account-link">Log in</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="module-top page-hero">
+      <a class="back-link" href="modules.html">← All modules</a>
+
+      <div class="module-topline">
+        <span class="module-number" id="module-number">MODULE 09</span>
+        <span class="status-pill" id="module-status">In progress</span>
+      </div>
+
+      <h1 id="module-title">Loading module…</h1>
+      <p id="module-description"></p>
+
+      <div class="module-progress-wrap">
+        <div class="progress-track">
+          <span id="module-progress-bar"></span>
+        </div>
+        <span id="module-progress-label">0% complete</span>
+      </div>
+    </section>
+
+    <div class="module-photo-banner">
+      <img
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=85"
+        alt="Students collaborating while learning"
+        loading="lazy">
+    </div>
+
+    <section class="section module-workspace">
+      <aside class="lesson-sidebar panel">
+        <span class="eyebrow">IN THIS MODULE</span>
+        <nav id="lesson-nav"></nav>
+
+        <button class="sidebar-quiz" id="jump-activity">
+          Practical activity ↓
+        </button>
+
+        <button class="sidebar-quiz" id="jump-quiz">
+          Knowledge check ↓
+        </button>
+      </aside>
+
+      <div class="lesson-main">
+        <section class="panel lesson-content" id="lesson-content"></section>
+
+        <section class="panel activity-panel" id="activity-panel">
+          <span class="eyebrow">PUT IT INTO PRACTICE</span>
+          <h2 id="activity-title">Practical activity</h2>
+          <p id="activity-intro"></p>
+          <ul id="activity-instructions" class="activity-instructions"></ul>
+
+          <form id="activity-form">
+            <label for="activity-response">
+              Your response / progress notes
+            </label>
+
+            <textarea
+              id="activity-response"
+              rows="8"
+              placeholder="Write your response here. You can save a draft and return later."></textarea>
+
+            <div class="form-actions">
+              <button class="btn btn-secondary" type="button" id="save-activity">
+                Save draft
+              </button>
+
+              <button class="btn btn-primary" type="submit" id="complete-activity">
+                Save and mark activity complete
+              </button>
+            </div>
+
+            <p id="activity-feedback" class="form-note" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="panel quiz-panel" id="quiz-panel">
+          <div class="quiz-heading">
+            <div>
+              <span class="eyebrow">CHECK YOUR UNDERSTANDING</span>
+              <h2>Module quiz</h2>
+              <p>10 questions · 1 point each · answers and explanations appear after submission.</p>
+            </div>
+
+            <span class="quiz-icon">?</span>
+          </div>
+
+          <form id="quiz-form">
+            <div id="quiz-questions"></div>
+
+            <div class="quiz-submit-row">
+              <p id="quiz-message" class="form-note" aria-live="polite">
+                Choose an answer for each question to submit.
+              </p>
+
+              <button class="btn btn-primary" type="submit">
+                Submit quiz
+              </button>
+            </div>
+          </form>
+
+          <div id="quiz-result" class="quiz-result" hidden></div>
+        </section>
+
+        <div class="module-bottom-nav">
+          <a id="previous-module" class="btn btn-secondary" href="module-8.html">
+            ← Previous module
+          </a>
+
+          <button
+            id="mark-module-complete"
+            class="btn btn-secondary"
+            type="button">
+            Mark module complete
+          </button>
+
+          <a id="next-module" class="btn btn-primary" href="modules.html">
+            Finish modules →
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark">L</span>
+        <span>LearnMate<small>Learn at your pace</small></span>
+      </a>
+
+      <p>A self-paced space to learn, practice, and reflect.</p>
+    </div>
+
+    <p>Learning progress is saved in this browser using local storage.</p>
+  </footer>
+
+  <section class="photo-strip" aria-label="Learning photo gallery">
+    <h2>Learn, connect, and grow <span aria-hidden="true">🌸</span></h2>
+
+    <div class="photo-grid">
+      <figure>
+        <img
+          loading="lazy"
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+          alt="Students learning together">
+        <figcaption>Learn together</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          loading="lazy"
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+          alt="Laptop and digital workspace">
+        <figcaption>Practice digital skills</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          loading="lazy"
+          src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+          alt="Students collaborating on coursework">
+        <figcaption>Grow your confidence</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      try {
+        const user = JSON.parse(
+          localStorage.getItem('learnmate_demo_session') || 'null'
+        );
+
+        if (!user) {
+          location.replace(
+            'login.html?next=' +
+            encodeURIComponent(location.pathname.split('/').pop())
+          );
+          return;
+        }
+
+        const accountLink = document.getElementById('account-link');
+
+        if (accountLink) {
+          accountLink.textContent = 'Log out';
+          accountLink.href = '#';
+
+          accountLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            localStorage.removeItem('learnmate_demo_session');
+            location.href = 'login.html';
+          });
+        }
+      } catch (error) {
+        location.replace('login.html');
+      }
+    })();
+  </script>
+
+  <script src="curriculum.js"></script>
+  <script src="response-config.js"></script>
+  <script src="responses.js"></script>
+  <script src="app.js"></script>
+  <script src="enhancements.js"></script>
+  <script src="upgrade-pack.js"></script>
+</body>
+</html>
