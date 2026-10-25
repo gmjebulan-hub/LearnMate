@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Share feedback about LearnMate and help improve its learning experience.">
+  <title>Feedback | LearnMate</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">L</span><span>LearnMate<small>Learn at your pace</small></span></a>
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-navigation">☰</button>
+  <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="modules.html">Modules</a><a href="dashboard.html">Dashboard</a><a href="portfolio.html">Portfolio</a><a href="feedback.html" class="active" aria-current="page">Feedback</a><a href="about.html">About Us</a><a href="login.html" id="account-link">Log in</a>
+  </nav>
+</header>
+<main>
+  <section class="page-hero feedback-hero"><span class="eyebrow">YOUR VOICE MATTERS</span><h1>Help us make <span>LearnMate</span> better</h1><p>Your feedback helps our student team improve the website, learning modules, quizzes, and accessibility. Please do not include passwords or private information.</p></section>
+  <section class="section feedback-layout" aria-labelledby="feedback-heading">
+    <div class="feedback-intro"><span class="eyebrow">LEARNMATE EVALUATION</span><h2 id="feedback-heading">Tell us about your experience</h2><p>Answer the questions based on your experience using the website. Your answers are intended for project evaluation.</p><div class="feedback-note"><strong>Privacy note</strong><p>The form does not ask for your name or email. A random browser ID and approximate device category help group submissions. Online collection only works after the project team connects the shared response endpoint.</p></div></div>
+    <form id="feedback-form" class="panel feedback-form">
+      <fieldset class="form-field star-rating-field"><legend>Overall rating <span aria-hidden="true">*</span></legend><p class="rating-hint">How would you rate your overall experience with LearnMate?</p><div class="star-rating" role="radiogroup" aria-label="Overall rating from one to five stars"><label><input type="radio" name="overallRating" value="1" required><span aria-hidden="true">★</span><small>1</small></label><label><input type="radio" name="overallRating" value="2"><span aria-hidden="true">★</span><small>2</small></label><label><input type="radio" name="overallRating" value="3"><span aria-hidden="true">★</span><small>3</small></label><label><input type="radio" name="overallRating" value="4"><span aria-hidden="true">★</span><small>4</small></label><label><input type="radio" name="overallRating" value="5"><span aria-hidden="true">★</span><small>5</small></label></div></fieldset>
+      <div class="form-field"><label for="ease">1. How easy was LearnMate to navigate? <span aria-hidden="true">*</span></label><select id="ease" name="ease" required><option value="">Choose a rating</option><option value="1">1 — Very difficult</option><option value="2">2 — Difficult</option><option value="3">3 — Okay</option><option value="4">4 — Easy</option><option value="5">5 — Very easy</option></select></div>
+      <div class="form-field"><label for="lessons">2. Were the lessons clear and understandable? <span aria-hidden="true">*</span></label><select id="lessons" name="lessons" required><option value="">Choose a rating</option><option value="1">1 — Not clear</option><option value="2">2 — Slightly clear</option><option value="3">3 — Somewhat clear</option><option value="4">4 — Clear</option><option value="5">5 — Very clear</option></select></div>
+      <div class="form-field"><label for="design">3. How would you rate the design and readability?</label><select id="design" name="design"><option value="">Choose a rating</option><option value="1">1 — Needs a lot of improvement</option><option value="2">2 — Needs improvement</option><option value="3">3 — Average</option><option value="4">4 — Good</option><option value="5">5 — Excellent</option></select></div>
+      <fieldset class="form-field"><legend>4. Did the lessons, activities, and quizzes work correctly? <span aria-hidden="true">*</span></legend><label class="choice-line"><input type="radio" name="worked" value="Yes" required> Yes</label><label class="choice-line"><input type="radio" name="worked" value="Some issues"> Some issues</label><label class="choice-line"><input type="radio" name="worked" value="No"> No</label></fieldset>
+      <div class="form-field"><label for="device">5. Which device did you use?</label><select id="device" name="device"><option value="">Choose a device</option><option>Cellphone</option><option>Tablet</option><option>Laptop</option><option>Desktop computer</option></select></div>
+      <div class="form-field"><label for="liked">6. What did you like about LearnMate?</label><textarea id="liked" name="liked" rows="3" maxlength="1200" placeholder="Share what worked well for you..."></textarea></div>
+      <div class="form-field"><label for="improve">7. What should we improve?</label><textarea id="improve" name="improve" rows="4" maxlength="1600" placeholder="Report a problem or suggest an improvement..."></textarea></div>
+      <button class="btn btn-primary" type="submit">Submit feedback</button>
+      <p id="feedback-status" class="form-note" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+  <section class="section feedback-export"><div class="panel"><h2>Project team: local response backup</h2><p>In local-demo mode, feedback stays in the browser where it was submitted. This backup button downloads responses saved in the current browser only; it does not collect other visitors' responses.</p><button id="export-feedback" class="btn btn-secondary" type="button">Download local response backup</button><p id="export-status" class="form-note" role="status" aria-live="polite"></p></div></section>
+</main>
+<footer class="site-footer"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">L</span><span>LearnMate<small>Learn at your pace</small></span></a><p>A self-paced space to learn, practice, and reflect.</p></div><p><a href="about.html">About LearnMate</a> · <a href="about.html#contact-us">Contact us</a></p></footer>
+<script src="js/response-config.js"></script><script src="js/responses.js"></script>
+<script>
+(function(){
+ const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.main-nav');if(toggle&&nav)toggle.addEventListener('click',function(){const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
+ try{const session=JSON.parse(localStorage.getItem('learnmate_demo_session')||'null');const account=document.getElementById('account-link');if(session&&account){account.textContent='Log out';account.href='#';account.addEventListener('click',function(e){e.preventDefault();localStorage.removeItem('learnmate_demo_session');location.href='login.html';});}}catch(e){}
+ const starInputs=Array.from(document.querySelectorAll('.star-rating input'));
+ starInputs.forEach(function(input){input.addEventListener('change',function(){const selected=Number(input.value);starInputs.forEach(function(item){item.closest('label').classList.toggle('selected',Number(item.value)<=selected);});});});
+ const form=document.getElementById('feedback-form'),status=document.getElementById('feedback-status');
+ form.addEventListener('submit',async function(e){e.preventDefault();if(!form.reportValidity())return;const data=new FormData(form);const record={type:'website_feedback',ratings:{overall:Number(data.get('overallRating')),navigation:Number(data.get('ease')),lessonClarity:Number(data.get('lessons')),design:data.get('design')?Number(data.get('design')):null},worked:data.get('worked'),deviceReported:data.get('device')||'',liked:String(data.get('liked')||'').trim(),improvements:String(data.get('improve')||'').trim(),submittedAt:new Date().toISOString()};const result=await window.LearnMateResponses.submit(record);if(result.mode==='online'){status.textContent='Thank you! Your feedback was submitted. Because of the online form security mode, this page cannot verify the spreadsheet response directly.';}else{status.textContent='Thank you! Your feedback was saved in this browser only. To collect responses from everyone online, the project team must connect the shared response endpoint.';}status.className='form-note success';form.reset();});
+ document.getElementById('export-feedback').addEventListener('click',function(){window.LearnMateResponses.exportLocal();document.getElementById('export-status').textContent='Downloaded the responses saved in this browser, if any.';document.getElementById('export-status').className='form-note success';});
+})();
+</script>
+<script src="js/enhancements.js"></script>
+<script src="js/upgrade-pack.js"></script></body>
+</html>
