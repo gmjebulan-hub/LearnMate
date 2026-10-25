@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Share feedback about LearnMate and help improve its learning experience.">
   <title>Feedback | LearnMate</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="index.html"><span class="brand-mark">L</span><span>LearnMate<small>Learn at your pace</small></span></a>
+  <a class="brand" href="index.html">
+    <span class="brand-mark">L</span>
+    <span>LearnMate<small>Learn at your pace</small></span>
+  </a>
   <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-navigation">☰</button>
   <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
     <a href="index.html">Home</a>
@@ -131,7 +134,7 @@
   <section class="section feedback-export">
     <div class="panel">
       <h2>Project team: local response backup</h2>
-      <p>In local-demo mode, feedback stays in the browser where it was submitted. This backup button downloads responses saved in the current browser only; it does not collect other visitors' responses.</p>
+      <p>In local-demo mode, feedback stays in the browser where it was submitted. This backup downloads responses saved in the current browser only.</p>
       <button id="export-feedback" class="btn btn-secondary" type="button">Download local response backup</button>
       <p id="export-status" class="form-note" role="status" aria-live="polite"></p>
     </div>
@@ -140,14 +143,17 @@
 
 <footer class="site-footer">
   <div>
-    <a class="brand footer-brand" href="index.html"><span class="brand-mark">L</span><span>LearnMate<small>Learn at your pace</small></span></a>
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">L</span>
+      <span>LearnMate<small>Learn at your pace</small></span>
+    </a>
     <p>A self-paced space to learn, practice, and reflect.</p>
   </div>
   <p><a href="about.html">About LearnMate</a> · <a href="about.html#contact-us">Contact us</a></p>
 </footer>
 
-<script src="js/response-config.js"></script>
-<script src="js/responses.js"></script>
+<script src="response-config.js"></script>
+<script src="responses.js"></script>
 <script>
 (function () {
   const toggle = document.querySelector('.menu-toggle');
@@ -195,7 +201,6 @@
 
     if (!window.LearnMateResponses || typeof window.LearnMateResponses.submit !== 'function') {
       status.textContent = 'The response system did not load. Please refresh the page or contact the project team.';
-      status.className = 'form-note';
       return;
     }
 
@@ -249,7 +254,6 @@
   exportButton.addEventListener('click', function () {
     if (!window.LearnMateResponses || typeof window.LearnMateResponses.exportLocal !== 'function') {
       exportStatus.textContent = 'The local backup feature did not load.';
-      exportStatus.className = 'form-note';
       return;
     }
 
@@ -259,7 +263,7 @@
   });
 })();
 </script>
-<script src="js/enhancements.js"></script>
-<script src="js/upgrade-pack.js"></script>
+<script src="enhancements.js"></script>
+<script src="upgrade-pack.js"></script>
 </body>
 </html>
