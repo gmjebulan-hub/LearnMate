@@ -1,2 +1,117 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="LearnMate online learning platform"><title>Learning modules | LearnMate</title><link rel="stylesheet" href="css/style.css"></head><body><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">L</span><span>LearnMate<small>Learn at your pace</small></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="main-nav"><a href="index.html">Home</a><a href="modules.html">Modules</a><a href="dashboard.html">Dashboard</a><a href="portfolio.html">Portfolio</a><a href="feedback.html">Feedback</a><a href="about.html">About Us</a><a href="login.html" id="account-link">Log in</a></nav></header><main><section class="page-hero"><span class="eyebrow">YOUR LEARNING PATH</span><h1>Explore the modules</h1><p>Follow the curriculum from orientation to the capstone. You can revisit any module whenever you need a refresher.</p><div class="overall-progress"><div><span>Overall progress</span><b id="modules-progress-text">0 of 9 completed</b></div><div class="progress-track"><span id="modules-progress-bar"></span></div></div></section><section class="section"><div class="module-list" id="all-modules"></div></section></main><footer class="site-footer"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">L</span><span>LearnMate<small>Learn at your pace</small></span></a><p>A self-paced space to learn, practice, and reflect.</p></div><p>Learning progress is saved in this browser using local storage.</p></footer><section class="photo-strip" aria-label="Learning photo gallery"><h2>Learn, connect, and grow <span aria-hidden="true">🌸</span></h2><div class="photo-grid"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Students learning together"><figcaption>Learn together</figcaption></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Laptop and digital workspace"><figcaption>Practice digital skills</figcaption></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Students collaborating on coursework"><figcaption>Grow your confidence</figcaption></figure></div></section><script>(function(){try{const u=JSON.parse(localStorage.getItem('learnmate_demo_session')||'null');if(!u){location.replace('login.html?next='+encodeURIComponent(location.pathname.split('/').pop()));return}const a=document.getElementById('account-link');if(a){a.textContent='Log out';a.href='#';a.addEventListener('click',function(e){e.preventDefault();localStorage.removeItem('learnmate_demo_session');location.href='login.html'})}}catch(e){location.replace('login.html')}})();</script><script src="js/curriculum.js"></script><script src="js/response-config.js"></script><script src="js/responses.js"></script><script src="js/app.js"></script><script src="js/enhancements.js"></script>
-<script src="js/upgrade-pack.js"></script></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LearnMate online learning platform">
+  <title>Learning modules | LearnMate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">L</span>
+      <span>LearnMate<small>Learn at your pace</small></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="modules.html">Modules</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="about.html">About Us</a>
+      <a href="login.html" id="account-link">Log in</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="eyebrow">YOUR LEARNING PATH</span>
+      <h1>Explore the modules</h1>
+      <p>Follow the curriculum from orientation to the capstone. You can revisit any module whenever you need a refresher.</p>
+
+      <div class="overall-progress">
+        <div>
+          <span>Overall progress</span>
+          <b id="modules-progress-text">0 of 9 completed</b>
+        </div>
+        <div class="progress-track">
+          <span id="modules-progress-bar"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="module-list" id="all-modules"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark">L</span>
+        <span>LearnMate<small>Learn at your pace</small></span>
+      </a>
+      <p>A self-paced space to learn, practice, and reflect.</p>
+    </div>
+    <p>Learning progress is saved in this browser using local storage.</p>
+  </footer>
+
+  <section class="photo-strip" aria-label="Learning photo gallery">
+    <h2>Learn, connect, and grow <span aria-hidden="true">🌸</span></h2>
+    <div class="photo-grid">
+      <figure>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Students learning together">
+        <figcaption>Learn together</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Laptop and digital workspace">
+        <figcaption>Practice digital skills</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Students collaborating on coursework">
+        <figcaption>Grow your confidence</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      try {
+        const u = JSON.parse(localStorage.getItem('learnmate_demo_session') || 'null');
+
+        if (!u) {
+          location.replace('login.html?next=' + encodeURIComponent(location.pathname.split('/').pop()));
+          return;
+        }
+
+        const a = document.getElementById('account-link');
+
+        if (a) {
+          a.textContent = 'Log out';
+          a.href = '#';
+
+          a.addEventListener('click', function (e) {
+            e.preventDefault();
+            localStorage.removeItem('learnmate_demo_session');
+            location.href = 'login.html';
+          });
+        }
+      } catch (e) {
+        location.replace('login.html');
+      }
+    })();
+  </script>
+
+  <script src="curriculum.js"></script>
+  <script src="response-config.js"></script>
+  <script src="responses.js"></script>
+  <script src="app.js"></script>
+  <script src="enhancements.js"></script>
+  <script src="upgrade-pack.js"></script>
+</body>
+</html>
